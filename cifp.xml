@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE cifp SYSTEM "cifp.dtd">
+
+<cifp>
+
+  <alumne id="1">
+    <nom>Joan</nom>
+    <llinatges>Garcia Pérez</llinatges>
+    <dataNaixement>2003-05-14</dataNaixement>
+    <correu>joan.garcia@email.com</correu>
+    <telefon>600123456</telefon>
+    <adreça>Carrer Major 10</adreça>
+    <dataMatricula>2023-09-15</dataMatricula>
+    <curs valor="DAW"/>
+  </alumne>
+
+  <alumne id="2">
+    <nom>Laura</nom>
+    <llinatges>Martí Ferrer</llinatges>
+    <dataMatricula>2022-09-20</dataMatricula>
+    <curs valor="DAM"/>
+  </alumne>
+
+  <professor id="10">
+    <nom>Maria</nom>
+    <llinatges>López Serra</llinatges>
+    <dataIncorporacio>2018-09-01</dataIncorporacio>
+    <departament valor="INFORMATICA"/>
+
+    <assignatura id="100">
+      <nomAssignatura cicle="DAW">Programació</nomAssignatura>
+      <dataInici>2024-09-15</dataInici>
+      <dataFinal>2025-06-20</dataFinal>
+    </assignatura>
+
+    <assignatura id="101">
+      <nomAssignatura cicle="DAM">Bases de Dades</nomAssignatura>
+    </assignatura>
+
+  </professor>
+
+</cifp>
