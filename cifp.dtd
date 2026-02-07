@@ -1,0 +1,39 @@
+<!ELEMENT cifp (alumne+, professor+)>
+<!ELEMENT alumne (nom,llinatges,dataNaixement?,correu?,telefon?,adreça?,dataMatricula,curs)>
+<!ELEMENT professor (nom,llinatges,dataNaixement?,correu?,telefon?,adreça?,dataIncorporacio,departament,assignatura*)>
+
+<!ELEMENT nom (#PCDATA)>
+<!ELEMENT llinatges (#PCDATA)>
+<!ELEMENT dataNaixement (#PCDATA)>
+<!ELEMENT correu (#PCDATA)>
+<!ELEMENT telefon (#PCDATA)>
+<!ELEMENT adreça (#PCDATA)>
+<!ELEMENT dataMatricula (#PCDATA)>
+<!ELEMENT curs EMPTY>
+<!ELEMENT dataIncorporacio (#PCDATA)>
+<!ELEMENT departament EMPTY>
+<!ELEMENT assignatura (nomAssignatura,dataInici?,dataFinal?)>
+<!ELEMENT nomAssignatura (#PCDATA)>
+<!ELEMENT dataInici (#PCDATA)>
+<!ELEMENT dataFinal (#PCDATA)>
+
+<!ATTLIST curs
+          valor (DAM | DAW | ASIX | SMX | SEIA | ER | AUT) #REQUIRED>
+<!ATTLIST alumne id CDATA #REQUIRED>
+<!ATTLIST professor id CDATA #REQUIRED>
+<!ATTLIST departament valor (INFORMATICA | ELECTRICITAT | AUTOMOCIO) #REQUIRED>
+<!ATTLIST assignatura id CDATA #REQUIRED>
+<!ATTLIST nomAssignatura cicle (DAM | DAW | ASIX | SMX | SEIA | ER | AUT) #REQUIRED>   
+
+<!--
+NOTA:
+Aunque el enunciado indica que los identificadores (id) son de tipo entero,
+el lenguaje DTD no permite definir tipos de datos numéricos.
+Por este motivo, los atributos id se han definido como CDATA y obligatorios.
+En el documento XML, los valores de id se escriben como números enteros.
+-->
+
+<!--
+DTD no permite restringir valores en el contenido de los elementos;
+por ello curs se define como atributo enumerado. No hay enum como en XSD y se simulan con atributos
+-->
