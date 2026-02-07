@@ -1,0 +1,58 @@
+{
+  "cifp": {
+    "alumne": [
+      {
+        "id": 1,
+        "nom": "Francesc",
+        "llinatges": "Torralbo Pérez",
+        "data_naixement": "07/02/2001",
+        "correu": "francesc@example.com",
+        "telefon": "123456789",
+        "adreça": "Carrer Fictici 12, Ciutat",
+        "data_matricula": "01/09/2025",
+        "curs": "DAW"
+      },
+      {
+        "id": 2,
+        "nom": "Laura",
+        "llinatges": "García López",
+        "data_matricula": "01/09/2025",
+        "curs": "DAM"
+      }
+    ],
+    "professor": [
+      {
+        "id": 101,
+        "nom": "Joan",
+        "llinatges": "Martínez Soler",
+        "data_naixement": "15/05/1980",
+        "correu": "joan@example.com",
+        "telefon": "987654321",
+        "adreça": "Carrer Docent 5, Ciutat",
+        "data_incorporacio": "01/09/2010",
+        "departament": "INFORMATICA",
+        "assignatura": [
+          {
+            "id_assignatura": 1,
+            "nom_assignatura": "Programació",
+            "cicle": "DAW",
+            "data_inici": "01/09/2025",
+            "data_final": "30/06/2026"
+          },
+          {
+            "id_assignatura": 2,
+            "nom_assignatura": "Bases de dades",
+            "cicle": "DAM"
+          }
+        ]
+      },
+      {
+        "id": 102,
+        "nom": "Marta",
+        "llinatges": "Soler Pons",
+        "data_incorporacio": "01/09/2015",
+        "departament": "AUTOMOCIO"
+      }
+    ]
+  }
+}
