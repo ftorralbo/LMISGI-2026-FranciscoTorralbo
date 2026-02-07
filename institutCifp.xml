@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cifp
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="cifp.xsd">
+
+    <alumne id="1">
+        <nom>Juan</nom>
+        <llinatges>Gomez Pons</llinatges>
+        <data_naixement>14/05/2003</data_naixement>
+        <correu>juan.gomez@cifp.cat</correu>
+        <telefon>600123456</telefon>
+        <adreça>Carrer Antillon 12</adreça>
+        <data_matricula>15/09/2022</data_matricula>
+        <curs>DAW</curs>
+    </alumne>
+
+    <alumne id="2">
+        <nom>Margarita</nom>
+        <llinatges>Ferrer Lopez</llinatges>
+        <data_matricula>18/09/2023</data_matricula>
+        <curs>DAM</curs>
+    </alumne>
+
+    <professor id="100">
+        <nom>Tomas</nom>
+        <llinatges>Riera Trones</llinatges>
+        <correu>tomas.riera@cifp.cat</correu>
+        <data_incorporacio>10/02/2019</data_incorporacio>
+        <departament>INFORMATICA</departament>
+
+        <assignatura id_assignatura="10">
+            <nom_assignatura cicle="DAW">Desenvolupament web</nom_assignatura>
+            <data_inici>01/09/2023</data_inici>
+            <data_final>30/06/2024</data_final>
+        </assignatura>
+
+        <assignatura id_assignatura="11">
+            <nom_assignatura cicle="DAM">Programació</nom_assignatura>
+        </assignatura>
+    </professor>
+
+    <professor id="101">
+        <nom>Antoni</nom>
+        <llinatges>Vaquer Serra</llinatges>
+        <data_incorporacio>15/02/2019</data_incorporacio>
+        <departament>ELECTRICITAT</departament>
+    </professor>
+
+</cifp>
